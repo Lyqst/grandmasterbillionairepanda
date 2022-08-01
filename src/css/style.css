@@ -1,0 +1,185 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Styles */
+
+:root {
+    --clr-primary: hsl(92, 52%, 37%);
+    --clr-secondary: hsl(122, 32%, 82%);
+    --clr-neutral: hsl(172, 2%, 25%);
+    --fs--3: clamp(0.58rem, calc(0.5rem + 0.37vw), 0.77rem);
+    --fs--2: clamp(0.69rem, calc(0.59rem + 0.52vw), 0.96rem);
+    --fs--1: clamp(0.83rem, calc(0.69rem + 0.72vw), 1.2rem);
+    --fs-0: clamp(1rem, calc(0.8rem + 0.98vw), 1.5rem);
+    --fs-1: clamp(1.2rem, calc(0.94rem + 1.32vw), 1.88rem);
+    --fs-2: clamp(1.44rem, calc(1.09rem + 1.76vw), 2.34rem);
+    --fs-3: clamp(1.73rem, calc(1.26rem + 2.35vw), 2.93rem);
+    --fs-4: clamp(2.07rem, calc(1.45rem + 3.1vw), 3.66rem);
+    --fs-5: clamp(2.49rem, calc(1.67rem + 4.08vw), 4.58rem);
+}
+
+body {
+    color: var(--clr-neutral);
+    font-family: sans-serif;
+    background-color: var(--clr-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: grid;
+    background-color: var(--clr-neutral);
+    place-items: center;
+    margin-block: 1em;
+    padding-block: 1em;
+    box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.1);
+
+    & .container {
+        width: min(90%, 45rem);
+    }
+}
+
+h1 {
+    color: var(--clr-primary);
+    font-size: var(--fs-3);
+    font-weight: 700;
+    text-align: right;
+    margin-inline: auto;
+    width: fit-content;
+    line-height: 1;
+
+    & span {
+        display: inline-block;
+        font-size: var(--fs-3);
+        font-weight: 700;
+        color: var(--clr-secondary);
+        transform: rotate(12deg);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: var(--clr-secondary);
+    font-size: var(--fs-1);
+}
+
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+    background-color: var(--clr-neutral);
+    padding-inline: 0.25em;
+    transition: all 50ms ease-in-out;
+    font-weight: 800;
+
+    &:hover {
+        color: var(--clr-neutral);
+        background-color: transparent;
+    }
+}
+
+main {
+    flex-grow: 1;
+    margin-block-start: 1rem;
+    font-size: var(--fs-0);
+    text-align: center;
+
+    & .container {
+        width: min(90%, 75ch);
+        margin-inline: auto;
+    }
+
+    & p + p {
+        margin-block-start: 0.5em;
+    }
+
+    & ul {
+        margin-block: 1em;
+        list-style: none;
+    }
+
+    & li {
+        margin-block-start: 0.5em;
+
+        & span {
+            font-weight: 700;
+        }
+
+        & a {
+            margin-inline-start: 0.25em;
+        }
+
+        & sup {
+            font-size: var(--fs--2);
+        }
+    }
+}
+
+footer {
+    background-color: var(--clr-secondary);
+    inset: auto 0 0 0;
+    font-size: var(--fs--1);
+
+    & .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0.5em;
+        padding-block: 0.5em;
+        width: min(90%, 60rem);
+        margin-inline: auto;
+    }
+}
+
+.small {
+    color: var(--clr-primary);
+    margin: 0;
+    font-size: var(--fs--2);
+}
+
+.odds {
+    font-size: var(--fs-2);
+    font-weight: 900;
+    margin: 0;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "grandmasterbillionairepanda",
+  "version": "1.0.0",
+  "author": "Benja Appel <benja.appel@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  }
+}
