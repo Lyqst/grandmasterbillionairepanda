@@ -45,8 +45,8 @@ h6 {
 /* Styles */
 
 :root {
-    --clr-primary: hsl(92, 52%, 37%);
-    --clr-secondary: hsl(122, 32%, 82%);
+    --clr-primary: hsl(72, 82%, 37%);
+    --clr-secondary: hsl(92, 32%, 92%);
     --clr-neutral: hsl(172, 2%, 25%);
     --fs--3: clamp(0.58rem, calc(0.5rem + 0.37vw), 0.77rem);
     --fs--2: clamp(0.69rem, calc(0.59rem + 0.52vw), 0.96rem);
@@ -181,5 +181,4 @@ footer {
 .odds {
     font-size: var(--fs-2);
     font-weight: 900;
-    margin: 0;
 }
