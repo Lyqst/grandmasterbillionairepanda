@@ -14,7 +14,7 @@
         "build-dev": "parcel build --no-optimize --public-url ./",
         "prebuild": "shx rm -rf dist/*",
         "build": "parcel build --public-url ./ ",
-        "publish": "yarn build & push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+        "build-and-push": "yarn build & push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
     },
     "devDependencies": {
         "parcel": "^2.6.2",
