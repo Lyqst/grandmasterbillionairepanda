@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap");
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -61,7 +63,7 @@ h6 {
 
 body {
     color: var(--clr-neutral);
-    font-family: sans-serif;
+    font-family: "Work Sans", sans-serif;
     background-color: var(--clr-secondary);
     display: flex;
     flex-direction: column;
@@ -95,7 +97,7 @@ h1 {
         font-size: var(--fs-3);
         font-weight: 700;
         color: var(--clr-secondary);
-        transform: rotate(12deg);
+        transform: rotate(12deg) translateY(0.1em);
     }
 }
 
